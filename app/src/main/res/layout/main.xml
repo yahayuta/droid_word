@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/linearLayoutMain" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical" >
+
+	     <com.google.android.gms.ads.AdView
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/adView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    ads:adUnitId="ca-app-pub-4280826531916194/1033835107"
+    ads:adSize="SMART_BANNER"/>
+	     
+	<ScrollView android:id="@+id/ScrollView01" android:layout_width="fill_parent" android:layout_height="fill_parent">
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/linearLayoutSub1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical" >
+		    <TextView
+		        android:id="@+id/textViewStatus"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:text="" />
+
+		    <SeekBar
+		        android:id="@+id/seekBarData"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content" />
+		
+		    <TextView
+		        android:id="@+id/textViewKeyword"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:text="@string/act_keyword" />		
+		    <EditText
+		        android:id="@+id/editTextKeyword"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content" >
+		        <requestFocus />
+		    </EditText>		
+		    <TextView
+		        android:id="@+id/textViewValue"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:text="@string/act_value" />		
+		    <EditText
+		        android:id="@+id/editTextValue"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content" />		
+		    <Button
+		        android:id="@+id/buttonDisp"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:text="@string/act_btn_display" />
+		    <Button
+		        android:id="@+id/buttonFwd"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:text="@string/act_btn_fwd" />
+		    <Button
+		        android:id="@+id/buttonRev"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:text="@string/act_btn_bwd" />	
+		    <Button
+		        android:id="@+id/buttonSave"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:text="@string/act_btn_save" />		
+		    <Button
+		        android:id="@+id/buttonRegist"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:text="@string/act_btn_new" />
+		    <Button
+		        android:id="@+id/buttonDelete"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:text="@string/act_btn_delete" />
+	  	</LinearLayout>
+  	</ScrollView> 
+</LinearLayout>

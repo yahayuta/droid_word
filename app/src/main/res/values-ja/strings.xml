@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">電子単語帳</string>
+    <string name="act_keyword">キーワード</string>
+    <string name="act_value">値</string>
+    <string name="act_btn_display">値を表示する</string>
+    <string name="act_btn_save">単語を保存する</string>
+    <string name="act_btn_new">新しい単語を追加する</string>
+    <string name="act_btn_delete">単語を削除する</string>
+    <string name="act_btn_cancel">キャンセル</string>
+    <string name="act_btn_fwd">次の単語</string>
+    <string name="act_btn_bwd">前の単語</string>
+    <string name="act_msg_data_saved">単語を保存しました</string>
+    <string name="act_msg_data_delete_conf">単語を削除してよろしいですか？</string>
+    <string name="act_msg_data_alldelete_conf">すべての単語を削除してよろしいですか？</string>
+    <string name="act_msg_data_delete">単語を削除しました</string>
+    <string name="act_msg_file_error">インポートファイル読み込みエラーが発生しました</string>
+    <string name="act_msg_import_ok">インポートに成功しました</string>
+    <string name="act_menu_reverse_key">キーワードと単語を逆転させる</string>
+    <string name="act_menu_btf">最初に戻る</string>
+    <string name="act_menu_export">単語データのエクスポート</string>
+    <string name="act_menu_import">単語データのインスポート</string>
+    <string name="act_status_rev">単語逆転中</string>
+    <string name="act_reset">すべての単語を削除する</string>
+</resources>

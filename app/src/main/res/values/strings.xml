@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">WORD CARDS</string>
+    <string name="act_keyword">KEYWORD</string>
+    <string name="act_value">VALUE</string>
+    <string name="act_btn_display">DISPLAY VALUE</string>
+    <string name="act_btn_save">SAVE</string>
+    <string name="act_btn_new">ADD NEW WORD</string>
+    <string name="act_btn_delete">DELETE THIS WORD</string>
+    <string name="act_btn_cancel">CANCEL</string>
+    <string name="act_btn_fwd">FORWARD</string>
+    <string name="act_btn_bwd">BACKWARD</string>
+    <string name="act_msg_data_saved">WORD SAVED</string>
+    <string name="act_msg_data_delete_conf">ARE YOU SURE TO DELETE THIS WORD?</string>
+    <string name="act_msg_data_alldelete_conf">ARE YOU SURE TO DELETE ALL WORDS?</string>
+    <string name="act_msg_data_delete">WORD DELETED</string>
+    <string name="act_msg_file_error">IMPORT FILE READ ERROR!</string>
+    <string name="act_msg_import_ok">IMPORT DONE</string>
+    <string name="act_menu_reverse_key">REVERSE KEYWORD</string>
+    <string name="act_menu_btf">BACK TO FIRST</string>
+    <string name="act_menu_export">EXPORT DATA</string>
+    <string name="act_menu_import">IMPORT DATA</string>
+    <string name="act_status_rev">REVERSED</string>
+    <string name="act_reset">DELETE ALL WORDS</string>
+</resources>
