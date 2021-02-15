@@ -1,27 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\yasun\\StudioProjects\\droid_word\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-ja\\values-ja.xml",
+            "outputFile": "D:\\develop\\droid_word\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-ja\\values-ja.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\yasun\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-15.0.1.aar\\4a781e9a74787a52d47e23e48c92b0e5\\res\\values-ja\\values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "247",
-                        "endColumns": "180",
-                        "endOffsets": "427"
-                    },
-                    "to": {
-                        "startLines": "24",
-                        "startColumns": "4",
-                        "startOffsets": "1289",
-                        "endColumns": "180",
-                        "endOffsets": "1465"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\yasun\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-ads-15.0.0.aar\\03f3b3cc9febb2b754df77e84724ce1d\\res\\values-ja\\values.xml",
+                    "source": "C:\\Users\\yahayuta\\.gradle\\caches\\transforms-2\\files-2.1\\311ab83fe5e99a9867b6586da904c860\\play-services-ads-15.0.0\\res\\values-ja\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10",
                         "startColumns": "0,0,0,0,0,0,0",
@@ -38,13 +21,13 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\yasun\\StudioProjects\\droid_word\\app\\src\\main\\res\\values-ja\\strings.xml",
+                    "source": "D:\\develop\\droid_word\\app\\src\\main\\res\\values-ja\\strings.xml",
                     "from": {
                         "startLines": "11,9,8,5,10,7,6,3,19,20,21,18,14,15,13,12,16,17,23,22,4,2",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "487,392,340,186,441,288,238,100,993,1041,1099,928,660,737,590,532,796,868,1207,1157,146,57",
+                        "startOffsets": "491,395,343,189,445,291,241,101,998,1046,1104,933,665,742,595,537,801,873,1212,1162,148,57",
                         "endColumns": "44,48,50,50,44,50,48,45,46,56,56,63,75,57,68,56,70,58,49,48,39,42",
-                        "endOffsets": "527,436,386,232,481,334,282,141,1035,1093,1151,987,731,790,654,584,862,922,1252,1201,181,95"
+                        "endOffsets": "531,439,389,235,485,337,285,142,1040,1098,1156,992,736,795,659,589,867,927,1257,1206,183,95"
                     },
                     "to": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23",
@@ -55,7 +38,24 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\yasun\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\102950fc287e156fb6455b95ade6d334\\res\\values-ja\\values-ja.xml",
+                    "source": "C:\\Users\\yahayuta\\.gradle\\caches\\transforms-2\\files-2.1\\9bfcf3df876387811413986a4ca2b534\\play-services-basement-15.0.1\\res\\values-ja\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "247",
+                        "endColumns": "180",
+                        "endOffsets": "427"
+                    },
+                    "to": {
+                        "startLines": "24",
+                        "startColumns": "4",
+                        "startOffsets": "1289",
+                        "endColumns": "180",
+                        "endOffsets": "1465"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\yahayuta\\.gradle\\caches\\transforms-2\\files-2.1\\5a15ed0d84c79d244315d09e10cd7f09\\support-compat-26.1.0\\res\\values-ja\\values-ja.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

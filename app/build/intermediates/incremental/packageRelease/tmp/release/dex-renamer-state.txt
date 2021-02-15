@@ -1,4 +1,4 @@
-#Thu May 03 23:39:52 JST 2018
-base.0=C\:\\Users\\yasun\\StudioProjects\\droid_word\\app\\build\\intermediates\\transforms\\dexMerger\\release\\0
+#Mon Feb 15 18:35:15 JST 2021
+base.0=D\:\\develop\\droid_word\\app\\build\\intermediates\\dex\\release\\mergeDexRelease\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

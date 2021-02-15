@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/droid_word.iml" filepath="$PROJECT_DIR$/droid_word.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/droid_word.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/droid_word.app.iml" />
     </modules>
   </component>
 </project>

@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "applicationId": "droid.word",
+  "variantType": "BASE_APK",
+  "elements": [
+    {
+      "outputType": {
+        "type": "PROCESSED_RES"
+      },
+      "apkData": {
+        "type": "MAIN",
+        "splits": [],
+        "versionCode": 20,
+        "versionName": "2.0.0",
+        "outputFile": "app-debug.apk",
+        "fullName": "debug",
+        "baseName": "debug",
+        "dirName": ""
+      },
+      "path": "resources-debug.ap_",
+      "properties": {
+        "packageId": "droid.word",
+        "split": "",
+        "minSdkVersion": "29"
+      }
+    }
+  ]
+}
