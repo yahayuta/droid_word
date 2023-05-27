@@ -1,13 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/linearLayoutMain" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical" >
-
-	     <com.google.android.gms.ads.AdView
-    xmlns:ads="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/adView"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    ads:adUnitId="ca-app-pub-4280826531916194/1033835107"
-    ads:adSize="SMART_BANNER"/>
 	     
 	<ScrollView android:id="@+id/ScrollView01" android:layout_width="fill_parent" android:layout_height="fill_parent">
 		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/linearLayoutSub1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical" >

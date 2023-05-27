@@ -1,13 +1,18 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 30
+    compileSdkVersion 33
     buildToolsVersion "30.0.3"
+    namespace 'droid.word'
 
     defaultConfig {
         applicationId "droid.word"
         minSdkVersion 29
-        targetSdkVersion 29
+        targetSdkVersion 33
+        compileOptions {
+            sourceCompatibility JavaVersion.VERSION_19
+            targetCompatibility JavaVersion.VERSION_19
+        }
     }
 
     buildTypes {
@@ -15,10 +20,6 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
         }
-    }
-
-    dependencies {
-        implementation 'com.google.android.gms:play-services-ads:15.0.0'
     }
 
     lintOptions {
