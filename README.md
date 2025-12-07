@@ -1,7 +1,7 @@
 # DroidWord - Word Cards Android App
 
-[![Android](https://img.shields.io/badge/Android-API%2029+-green.svg)](https://developer.android.com/about/versions/android-10)
-[![Gradle](https://img.shields.io/badge/Gradle-8.9-blue.svg)](https://gradle.org/)
+[![Android](https://img.shields.io/badge/Android-API%2034+-blue.svg)](https://developer.android.com/about/versions/android-14)
+[![Gradle](https://img.shields.io/badge/Gradle-8.3-blue.svg)](https://gradle.org/)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 A simple and efficient Android application for creating and managing word cards for learning and memorization. DroidWord allows users to create keyword-value pairs, navigate through them, and export/import data for backup purposes.
@@ -20,10 +20,10 @@ A simple and efficient Android application for creating and managing word cards 
 
 ### Prerequisites
 
-- Android Studio Arctic Fox or later
-- Android SDK API 29+ (Android 10)
-- Java 19
-- Gradle 8.9
+- Android Studio Koala | 2024.1.2 or later
+- Android SDK API 34+ (Android 14)
+- Java 8 (or higher)
+- Gradle 8.3 (or higher)
 
 ### Installation
 
@@ -98,6 +98,7 @@ droid_word/
 │   │   └── AndroidManifest.xml        # App manifest
 │   └── build.gradle                   # App-level build config
 ├── build.gradle                       # Project-level build config
+├── gradle.properties                  # Project-wide Gradle settings
 └── gradle/wrapper/                    # Gradle wrapper
 ```
 
@@ -108,7 +109,7 @@ droid_word/
 - **Database**: SQLite with custom helper class
 - **UI**: Traditional Android Views (no modern UI libraries)
 - **Minimum SDK**: API 29 (Android 10)
-- **Target SDK**: API 33 (Android 13)
+- **Target SDK**: API 34 (Android 14)
 
 ### Key Components
 
@@ -161,4 +162,4 @@ If you encounter any issues or have questions:
 
 ---
 
-**Note**: This app is designed for educational purposes and personal word card management. For production use, consider adding additional security measures and cloud backup options. 
+**Note**: This app is designed for educational purposes and personal word card management. For production use, consider adding additional security measures and cloud backup options.
