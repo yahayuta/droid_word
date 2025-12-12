@@ -1,29 +1,29 @@
-# DroidWord - Word Cards Android App
+# DroidWord - Word Cards Flutter App
 
-[![Android](https://img.shields.io/badge/Android-API%2034+-blue.svg)](https://developer.android.com/about/versions/android-14)
-[![Gradle](https://img.shields.io/badge/Gradle-8.3-blue.svg)](https://gradle.org/)
+[![Flutter](https://img.shields.io/badge/Flutter-3.x-blue.svg)](https://flutter.dev/)
+[![Dart](https://img.shields.io/badge/Dart-3.x-blue.svg)](https://dart.dev/)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-A simple and efficient Android application for creating and managing word cards for learning and memorization. DroidWord allows users to create keyword-value pairs, navigate through them, and export/import data for backup purposes.
+A simple and efficient cross-platform application built with Flutter for creating and managing word cards for learning and memorization. DroidWord allows users to create keyword-value pairs, navigate through them, and export/import data for backup purposes.
 
 ## 📱 Features
 
-- **Word Card Management**: Create, edit, and delete keyword-value pairs
-- **Navigation**: Forward/backward navigation through word cards
-- **Display Mode**: Show/hide values to test your memory
-- **Data Export/Import**: Backup and restore your word cards
-- **Reverse Mode**: Switch between keyword and value display
-- **Seek Bar Navigation**: Quick navigation through all cards
-- **Status Persistence**: App remembers your current position and settings
+- **Cross-Platform**: Available on Android, iOS, Web, and Desktop (Windows, macOS, Linux).
+- **Word Card Management**: Create, edit, and delete keyword-value pairs.
+- **Navigation**: Forward/backward navigation through word cards.
+- **Display Mode**: Show/hide values to test your memory.
+- **Data Export/Import**: Backup and restore your word cards (CSV format).
+- **Reverse Mode**: Switch between keyword and value display.
+- **Seek Bar Navigation**: Quick navigation through all cards.
+- **Status Persistence**: App remembers your current position and settings.
 
 ## 🚀 Getting Started
 
 ### Prerequisites
 
-- Android Studio Koala | 2024.1.2 or later
-- Android SDK API 34+ (Android 14)
-- Java 8 (or higher)
-- Gradle 8.3 (or higher)
+- [Flutter SDK](https://flutter.dev/docs/get-started/install) (version 3.x or higher)
+- [Dart SDK](https://dart.dev/get-dart) (version 3.x or higher)
+- A Flutter-supported IDE (VS Code with Flutter extension or Android Studio with Flutter plugin recommended).
 
 ### Installation
 
@@ -33,94 +33,85 @@ A simple and efficient Android application for creating and managing word cards 
    cd droid_word
    ```
 
-2. **Open in Android Studio**
-   - Launch Android Studio
-   - Select "Open an existing Android Studio project"
-   - Navigate to the cloned directory and select it
+2. **Get Flutter dependencies**
+   ```bash
+   flutter pub get
+   ```
 
-3. **Build and Run**
-   - Connect an Android device or start an emulator
-   - Click the "Run" button (green play icon) in Android Studio
-   - The app will be installed and launched on your device
-
-### Building from Command Line
-
-```bash
-# Navigate to project directory
-cd droid_word
-
-# Build the project
-./gradlew build
-
-# Install on connected device
-./gradlew installDebug
-```
+3. **Run the app**
+   - Connect a device or start an emulator/browser.
+   - Run from your IDE, or from the command line:
+     ```bash
+     flutter run
+     ```
+     (You may need to select a device if multiple are connected, e.g., `flutter run -d <device_id>`)
 
 ## 📖 Usage
 
 ### Basic Operations
 
 1. **Adding New Words**
-   - Tap "ADD NEW WORD" button
-   - Enter keyword and value
-   - Tap "SAVE" to store the word card
+   - Tap the "New" button.
+   - Enter Word 1 and Word 2.
+   - Tap "Save Changes" to store the word card.
 
 2. **Viewing Words**
-   - Use "DISPLAY VALUE" to show the value for the current keyword
-   - Use "FORWARD" and "BACKWARD" buttons to navigate
-   - Use the seek bar for quick navigation
+   - Use the "Display" button to show the value for the current keyword.
+   - Use the "Previous" and "Next" buttons to navigate.
+   - Use the slider for quick navigation.
 
 3. **Managing Words**
-   - "DELETE THIS WORD" removes the current word card
-   - Menu options provide additional functionality
+   - The "Save" button allows you to edit the current word.
+   - The "Delete" button removes the current word card (with confirmation).
 
-### Menu Options
+### AppBar Options (Menu)
 
-- **Reverse Keyword**: Switch display between keyword and value
-- **Back to First**: Return to the first word card
-- **Export Data**: Save all word cards to a CSV file
-- **Delete All Words**: Reset the application (with confirmation)
+- **Reverse**: Swap the display order of Word 1 and Word 2.
+- **Back to First**: Return to the first word card.
+- **Export Data**: Save all word cards to a CSV file (shared via system share sheet).
+- **Import Data**: Load word cards from a CSV file (prompts for file selection).
+- **Reset All**: Delete all word cards (with confirmation).
 
 ## 🏗️ Project Structure
 
 ```
 droid_word/
-├── app/
-│   ├── src/main/
-│   │   ├── java/droid/word/
-│   │   │   ├── WordActivity.java      # Main activity
-│   │   │   ├── WordDBHelper.java      # Database helper
-│   │   │   └── WordEntity.java        # Data model
-│   │   ├── res/
-│   │   │   ├── layout/main.xml        # Main UI layout
-│   │   │   ├── values/strings.xml     # English strings
-│   │   │   └── values-ja/strings.xml  # Japanese strings
-│   │   └── AndroidManifest.xml        # App manifest
-│   └── build.gradle                   # App-level build config
-├── build.gradle                       # Project-level build config
-├── gradle.properties                  # Project-wide Gradle settings
-└── gradle/wrapper/                    # Gradle wrapper
+├── lib/                             # Flutter application source code
+│   ├── main.dart                    # Main entry point of the app
+│   ├── database_helper.dart         # Database operations (SQLite)
+│   ├── word.dart                    # Word data model
+│   ├── new_word_screen.dart         # Screen for adding new words
+│   └── edit_word_screen.dart        # Screen for editing existing words
+├── android/                         # Android specific files (generated by Flutter)
+├── ios/                             # iOS specific files (generated by Flutter)
+├── web/                             # Web specific files (generated by Flutter)
+├── windows/                         # Windows specific files (generated by Flutter)
+├── macos/                           # macOS specific files (generated by Flutter)
+├── linux/                           # Linux specific files (generated by Flutter)
+├── pubspec.yaml                     # Project dependencies and metadata
+├── README.md                        # This README file
+└── android_backup/                  # Backup of the original Android project
 ```
 
 ## 🛠️ Technical Details
 
 ### Architecture
-- **Language**: Java
-- **Database**: SQLite with custom helper class
-- **UI**: Traditional Android Views (no modern UI libraries)
-- **Minimum SDK**: API 29 (Android 10)
-- **Target SDK**: API 34 (Android 14)
+- **Framework**: Flutter
+- **Language**: Dart
+- **Database**: SQLite using `sqflite` package
+- **Minimum SDK**: Defined in `android/app/build.gradle` and `ios/Runner.xcodeproj/project.pbxproj`
 
 ### Key Components
 
-- **WordActivity**: Main activity handling UI interactions and business logic
-- **WordDBHelper**: SQLite database helper for CRUD operations
-- **WordEntity**: Data model representing a word card
-- **CSV Import/Export**: File-based data persistence
-
-## 📱 Screenshots
-
-*Screenshots would be added here showing the app interface*
+- **main.dart**: Sets up the Flutter app, including routes and main homepage.
+- **MyHomePage**: Main UI handling word card display, navigation, and actions.
+- **DatabaseHelper**: Manages SQLite database operations (CRUD for words and status).
+- **Word**: Dart class representing a word card entity.
+- **NewWordScreen**: UI for adding new word cards.
+- **EditWordScreen**: UI for editing existing word cards.
+- **FilePicker**: For importing CSV files.
+- **SharePlus**: For exporting CSV files.
+- **path_provider**: To access platform-agnostic file system paths.
 
 ## 🤝 Contributing
 
@@ -130,27 +121,22 @@ droid_word/
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-### Development Guidelines
-
-- Follow Android development best practices
-- Maintain backward compatibility with API 29+
-- Add appropriate error handling
-- Include Japanese localization for new strings
-- Test on both phone and tablet layouts
-
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file in the `android_backup` folder for details on the original Android project's license, and the current `LICENSE` file for the Flutter project.
 
 ## 👨‍💻 Author
 
-**yasupong** - *Initial work*
+**yasupong** - *Original Android project*
+**Gemini AI** - *Flutter migration and new features*
 
 ## 🙏 Acknowledgments
 
-- Android Developer Documentation
-- SQLite for data persistence
-- Gradle build system
+- Flutter team for an amazing framework
+- `sqflite` for database management
+- `path_provider` for file system access
+- `share_plus` for sharing capabilities
+- `file_picker` for file selection
 
 ## 📞 Support
 
@@ -158,7 +144,7 @@ If you encounter any issues or have questions:
 
 1. Check the [Issues](../../issues) page for existing problems
 2. Create a new issue with detailed information
-3. Include device information and Android version
+3. Include device information and Flutter/OS versions.
 
 ---
 
